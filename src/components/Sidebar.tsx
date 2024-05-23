@@ -1,10 +1,5 @@
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
-import { faAddressBook } from "@fortawesome/free-regular-svg-icons";
-import {
-  faFileInvoice,
-  faHome,
-  faUserGroup,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCalendar, faHome, faUser, faUserGroup } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
 
@@ -21,23 +16,23 @@ export const Sidebar = () => {
       icon: faUserGroup,
       href: "/manage-team",
     },
-    {
-      name: "Contacts Information",
-      icon: faAddressBook,
-      href: "/contact-info",
-    },
-    {
-      name: "Invoices Balances",
-      icon: faFileInvoice,
-      href: "/invoices",
-    },
     {},
+    {
+      name: "Add User",
+      icon: faUser,
+      href: "/add-user",
+    },
+    {
+      name: "Calender",
+      icon: faCalendar,
+      href: "/calender",
+    },
   ];
   return (
     <>
       <aside
         id="default-sidebar"
-        className={`md:block top-0 left-0 z-40 md:w-64 h-[calc(100vh-72px)]  transition-transform w-16`}
+        className={` border-r dark:border-gray-700 md:block top-0 left-0 z-40 md:w-64 h-[calc(100vh-72px)]  transition-transform w-16`}
         aria-label="Sidebar"
       >
         <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">

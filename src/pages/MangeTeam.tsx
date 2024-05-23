@@ -194,7 +194,7 @@ export const MangeTeam = () => {
     },
   ];
   return (
-    <div className="relative overflow-x-auto shadow-md sm:rounded-lg w-[100%] p-2 h-[calc(100vh-72px)]">
+    <div className="relative overflow-x-auto shadow-md  w-[100%] h-[calc(100vh-72px)]">
       <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
         <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
           <tr>
