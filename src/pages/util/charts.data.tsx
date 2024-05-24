@@ -56,6 +56,7 @@ export const barChart = [
     italy: 1670,
   },
 ];
+
 export const pieChart = [
   {
     id: "elixir",

@@ -17,6 +17,7 @@ import FAQ from "./pages/FAQ";
 import { Bar } from "./pages/Bar";
 import { Pie } from "./pages/Pie";
 import { Geo } from "./pages/Geo";
+import { Dashboard } from "./pages/dashboard/Dashboard";
 const darkTheme = createTheme({
   palette: {
     mode: "dark",
@@ -25,6 +26,7 @@ const darkTheme = createTheme({
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
+      <Route index element={<Dashboard />} />
       <Route path="manage-team" element={<MangeTeam />} />
       <Route path="add-user" element={<AddUser />} />
       <Route path="calender" element={<Calender />} />

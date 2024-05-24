@@ -3,7 +3,7 @@ import { ResponsiveChoropleth } from "@nivo/geo";
 import { geo } from "./util/world-countries";
 export const Geo = () => {
   return (
-    <div className="relative overflow-x-auto shadow-md  w-[100%] h-[calc(100vh-72px)]">
+    <div className="relative overflow-hidden shadow-md  w-[100%] h-[calc(100vh-72px)]">
       <div className="block h-full w-full">
         <ResponsiveChoropleth
           data={geoChart}
