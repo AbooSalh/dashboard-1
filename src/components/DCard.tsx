@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const DCard = ({ content }) => {
   const boxClasses =
-    "min-w-[333px] dark:bg-slate-700 flex row justify-between p-2 rounded-lg grow";
+    "w-[333px] dark:bg-slate-700 flex row justify-between p-2 rounded-lg grow";
 
   return (
     <div className={boxClasses}>
