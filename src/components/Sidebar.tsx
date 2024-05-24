@@ -1,5 +1,6 @@
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import {
+  faBarChart,
   faCalendar,
   faCircleQuestion,
   faHome,
@@ -37,6 +38,12 @@ export const Sidebar = () => {
       name: "F&Q",
       icon: faCircleQuestion,
       href: "/faq",
+    },
+    {},
+    {
+      name: "Bar",
+      icon: faBarChart,
+      href: "/bar",
     },
   ];
   return (

@@ -14,6 +14,7 @@ import { MangeTeam } from "./pages/MangeTeam";
 import { AddUser } from "./pages/AddUser";
 import Calender from "./pages/Calender";
 import FAQ from "./pages/FAQ";
+import { Bar } from "./pages/Bar";
 const darkTheme = createTheme({
   palette: {
     mode: "dark",
@@ -26,6 +27,7 @@ const router = createBrowserRouter(
       <Route path="add-user" element={<AddUser />} />
       <Route path="calender" element={<Calender />} />
       <Route path="faq" element={<FAQ />} />
+      <Route path="bar" element={<Bar />} />
       {/* ... etc. */}
     </Route>
   )

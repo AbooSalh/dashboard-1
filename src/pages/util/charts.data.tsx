@@ -1,0 +1,58 @@
+export const barChart = [
+  {
+    year: 2016,
+    spain: 1100,
+    germany: 1200,
+    france: 1400,
+    italy: 1500,
+  },
+  {
+    year: 2017,
+    spain: 1150,
+    germany: 1250,
+    france: 1450,
+    italy: 1520,
+  },
+  {
+    year: 2018,
+    spain: 1200,
+    germany: 1300,
+    france: 1500,
+    italy: 1550,
+  },
+  {
+    year: 2019,
+    spain: 1250,
+    germany: 1350,
+    france: 1550,
+    italy: 1570,
+  },
+  {
+    year: 2020,
+    spain: 1300,
+    germany: 1400,
+    france: 1600,
+    italy: 1600,
+  },
+  {
+    year: 2021,
+    spain: 1350,
+    germany: 1450,
+    france: 1650,
+    italy: 1620,
+  },
+  {
+    year: 2022,
+    spain: 1400,
+    germany: 1500,
+    france: 1700,
+    italy: 1650,
+  },
+  {
+    year: 2023,
+    spain: 1450,
+    germany: 1550,
+    france: 1750,
+    italy: 1670,
+  },
+];
