@@ -1,5 +1,11 @@
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
-import { faCalendar, faHome, faUser, faUserGroup } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCalendar,
+  faCircleQuestion,
+  faHome,
+  faUser,
+  faUserGroup,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
 
@@ -26,6 +32,11 @@ export const Sidebar = () => {
       name: "Calender",
       icon: faCalendar,
       href: "/calender",
+    },
+    {
+      name: "F&Q",
+      icon: faCircleQuestion,
+      href: "/faq",
     },
   ];
   return (

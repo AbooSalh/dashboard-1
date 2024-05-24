@@ -13,6 +13,7 @@ import App from "./App";
 import { MangeTeam } from "./pages/MangeTeam";
 import { AddUser } from "./pages/AddUser";
 import Calender from "./pages/Calender";
+import FAQ from "./pages/FAQ";
 const darkTheme = createTheme({
   palette: {
     mode: "dark",
@@ -24,6 +25,7 @@ const router = createBrowserRouter(
       <Route path="manage-team" element={<MangeTeam />} />
       <Route path="add-user" element={<AddUser />} />
       <Route path="calender" element={<Calender />} />
+      <Route path="faq" element={<FAQ />} />
       {/* ... etc. */}
     </Route>
   )
