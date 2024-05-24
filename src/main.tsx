@@ -15,6 +15,8 @@ import { AddUser } from "./pages/AddUser";
 import Calender from "./pages/Calender";
 import FAQ from "./pages/FAQ";
 import { Bar } from "./pages/Bar";
+import { Pie } from "./pages/Pie";
+import { Geo } from "./pages/Geo";
 const darkTheme = createTheme({
   palette: {
     mode: "dark",
@@ -28,6 +30,8 @@ const router = createBrowserRouter(
       <Route path="calender" element={<Calender />} />
       <Route path="faq" element={<FAQ />} />
       <Route path="bar" element={<Bar />} />
+      <Route path="pie" element={<Pie />} />
+      <Route path="geo" element={<Geo />} />
       {/* ... etc. */}
     </Route>
   )

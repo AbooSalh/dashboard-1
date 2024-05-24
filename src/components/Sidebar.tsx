@@ -4,6 +4,8 @@ import {
   faCalendar,
   faCircleQuestion,
   faHome,
+  faMap,
+  faPieChart,
   faUser,
   faUserGroup,
 } from "@fortawesome/free-solid-svg-icons";
@@ -44,6 +46,16 @@ export const Sidebar = () => {
       name: "Bar",
       icon: faBarChart,
       href: "/bar",
+    },
+    {
+      name: "Pie",
+      icon: faPieChart,
+      href: "/pie",
+    },
+    {
+      name: "Geo",
+      icon: faMap,
+      href: "/geo",
     },
   ];
   return (
