@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { SetStateAction, useState } from "react";
 import { formatDate } from "@fullcalendar/core";
 import FullCalendar from "@fullcalendar/react";
@@ -53,7 +53,7 @@ const Calender = () => {
   };
 
   return (
-    <div className="demo-app w-full p-4 ">
+    <div className="demo-app w-full p-4 h-[calc(100vh-72px)]  overflow-y-auto ">
       <div className="demo-app-main">
         <FullCalendar
           plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
@@ -98,8 +98,7 @@ const renderEventContent = (eventInfo) => (
 
 const Sidebar = ({ weekendsVisible, handleWeekendsToggle, currentEvents }) => (
   <div className="demo-app-sidebar w-full text-center">
-    <div className="demo-app-sidebar-section">
-    </div>
+    <div className="demo-app-sidebar-section"></div>
     <Accordion type="single" collapsible>
       <AccordionItem value="item-1">
         <AccordionTrigger>All Events</AccordionTrigger>

@@ -1,6 +1,7 @@
 import React from "react";
 import { LineChart } from "../../components/LineChart";
- const recentTransactions = [
+
+const recentTransactions = [
   {
     id: "0412ks4i",
     name: "Ahmed",
@@ -65,25 +66,24 @@ import { LineChart } from "../../components/LineChart";
 
 export const Row2 = () => {
   const recentClasses = "dark:bg-gray-700 rounded p-3 mt-2";
+
   return (
-    <div className="flex h-[500px] w-full flex-wrap">
-      <div className=" h-full lg:block hidden  grow w-[70%]">
+    <div className="flex w-full flex-wrap">
+      <div className="lg:w-[70%] w-full lg:h-[500px] h-[300px]">
         <LineChart />
       </div>
-      <div className="overflow-y-scroll h-[400px] mt-12 grow">
-        <ul>
+      <div className="w-full lg:w-[30%] lg:h-[500px] h-[400px] overflow-y-auto mt-10 lg:mt-12">
+        <ul >
           <li className={recentClasses}>
-            <h3 className="text-3xl  ">Recent Transcation</h3>
+            <h3 className="text-3xl">Recent Transactions</h3>
           </li>
           {recentTransactions.map((transaction) => (
             <li
               key={transaction.id}
-              className={
-                recentClasses + " flex row justify-between items-center"
-              }
+              className={recentClasses + " flex justify-between items-center"}
             >
               <div className="left">
-                <div className="id fw-bold">{transaction.id}</div>
+                <div className="id font-bold">{transaction.id}</div>
                 <div className="name">{transaction.name}</div>
               </div>
               <div className="center">{transaction.date}</div>

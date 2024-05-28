@@ -7,12 +7,11 @@ import { ResponsivePie } from "@nivo/pie";
 // no chart will be rendered.
 // website examples showcase many properties,
 // you'll often use just a few of them.
-import React from "react";
 import { pieChart } from "./util/charts.data";
 
 export const Pie = () => {
   return (
-    <div className="w-full">
+    <div className="w-full h-[calc(100vh-72px)]  overflow-y-auto">
       <ResponsivePie
         data={pieChart}
         margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
@@ -104,7 +103,7 @@ export const Pie = () => {
             id: "lines",
           },
         ]}
-        tooltip={({datum}) => (
+        tooltip={({ datum }) => (
           <div className="dark:bg-gray-800 p-2 text-xs rounded-xl">
             {datum.id}: {datum.value} in {datum.label}
           </div>
